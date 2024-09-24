@@ -1,0 +1,5 @@
+Apache Spark is a powerful distributed computing framework.
+It is widely used for big data processing.
+Spark can process large datasets efficiently across clusters.
+Spark has APIs in Scala, Java, Python, and R.
+Dask is also a powerful framework for parallel computing.
