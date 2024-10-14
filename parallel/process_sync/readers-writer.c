@@ -13,6 +13,9 @@ void readers(void* arg) {
         // first reader hold the mutex, to protect the read count. other readers must wait here
         sem_wait(&mutex);  // must using & to modify, even mutex is a global var. otherwise don't change val of mutex
         read_count++;
+        /** 如果我们把release mutex加在这里。那么只有第一个reader会等待rw释放。其他的reader则已经越过==1
+         * 直接进到critical section。即使rw还没释放。因为它们的rad count不为1，所以甚至不会检查rw lock是否释放
+         */
         if (read_count == 1) {
             sem_wait(&rw_mutex);
         }
