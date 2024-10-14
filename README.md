@@ -7,3 +7,4 @@ Repo for distributed computing tech: spark, dask, CUDA, parallel computing, GPU 
 | docker       | ./container/docker     | Docker build cases based on executable files, requirements.txt, Dockerfile    |
 | dask         | ./dask                 | Dask calculation      |
 | spark        | ./spark                | Spark calculation     |
+| parallel     | ./parallel             | parallel computing    |
